@@ -592,34 +592,34 @@
           </ul>
         </div>
         <div class="subscrb-box">
-          <p class="form-subscrb-text" for="user-email">Subscribe</p>
+          <p class="form-subscrb-text">Subscribe</p>
           <form class="form-subscrb-email">
-            <input
-              class="form-subscrb-input"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="E-mail"
-              required
-            />
-            <div class="box-subscrb-btn">
-              <button class="form-subscrb-btn" type="submit">
-                Subscribe
-                <svg
-                  class="icon-send-btn"
-                  width="24"
-                  height="24"
-                  aria-label="icon-send"
-                >
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <label for="user-email" class="form-subscrb-email-label">
+              <input
+                class="form-subscrb-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="form-subscrb-btn" type="submit">
+              Subscribe
+              <svg
+                class="icon-send-btn"
+                width="24"
+                height="24"
+                aria-label="icon-send"
+              >
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg
@@ -681,10 +681,12 @@
             </div>
           </div>
           <div class="request-modal-comment-wrapper">
-            <label for="comment" class="request-modal-label">Comment</label>
+            <label for="user-comment" class="request-modal-label"
+              >Comment</label
+            >
             <textarea
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               class="request-modal-comment"
               placeholder="Text input"
             >
@@ -694,12 +696,12 @@
             <input
               type="checkbox"
               class="request-privacy-checkbox visually-hidden"
-              id="privacy-policy"
-              name="privacy-policy"
+              id="user-privacy"
+              name="user-privacy"
               value="true"
               required
             />
-            <label for="privacy-policy" class="request-form-checkbox-label">
+            <label for="user-privacy" class="request-form-checkbox-label">
               <span class="request-form-own-checkbox">
                 <svg
                   class="request-form-own-checkbox-icon"
@@ -709,7 +711,7 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the&#8194
+              I accept the terms and conditions of the&#8194;
               <a class="privacy-policy-link" href="">Privacy Policy</a>
             </label>
           </div>
