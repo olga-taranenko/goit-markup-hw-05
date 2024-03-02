@@ -504,23 +504,23 @@ address {
   height: 40px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 .form-subscrb-input::placeholder {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .form-subscrb-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-    min-width: 165px;
+  min-width: 165px;
   height: 40px;
   border-radius: 4px;
   border: none;
   background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -609,7 +609,7 @@ address {
   border: none;
 }
 
-.modal-close-btn:hover,
+.modal-close-btn:hover .icon-close-btn,
 .modal-close-btn:focus .icon-close-btn {
   fill: #fff;
 }
@@ -731,9 +731,9 @@ address {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .request-privacy-checkbox:checked
@@ -766,7 +766,7 @@ address {
   text-align: center;
   color: #fff;
   border: none;
-  cursor: pointer
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
