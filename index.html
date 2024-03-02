@@ -591,7 +591,131 @@
             </li>
           </ul>
         </div>
+        <div class="subscrb-box">
+          <p class="form-subscrb-text" for="user-email">Subscribe</p>
+          <form class="form-subscrb-email">
+            <input
+              class="form-subscrb-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+              required
+            />
+            <div class="box-subscrb-btn">
+              <button class="form-subscrb-btn" type="submit">
+                Subscribe
+                <svg
+                  class="icon-send-btn"
+                  width="24"
+                  height="24"
+                  aria-label="icon-send"
+                >
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg
+            class="icon-close-btn"
+            width="8"
+            height="8"
+            aria-label="icon-close"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="request-modal-description">
+          Leave your contacts and we will call you back
+        </p>
+        <form>
+          <div class="request-modal-field-wrapper">
+            <label for="user-name" class="request-modal-label">Name</label>
+            <div class="request-form-input-wrapper">
+              <input
+                class="request-modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg class="request-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="request-modal-field-wrapper">
+            <label for="user-phone" class="request-modal-label">Phone</label>
+            <div class="request-form-input-wrapper">
+              <input
+                type="tel"
+                class="request-modal-input"
+                name="user-phone"
+                id="user-phone"
+                required
+              />
+              <svg class="request-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="request-modal-field-wrapper">
+            <label for="user-mail" class="request-modal-label">Email</label>
+            <div class="request-form-input-wrapper">
+              <input
+                type="email"
+                class="request-modal-input"
+                name="user-mail"
+                id="user-mail"
+                required
+              />
+              <svg class="request-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="request-modal-comment-wrapper">
+            <label for="comment" class="request-modal-label">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="request-modal-comment"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <div class="request-form-checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="request-privacy-checkbox visually-hidden"
+              id="privacy-policy"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <label for="privacy-policy" class="request-form-checkbox-label">
+              <span class="request-form-own-checkbox">
+                <svg
+                  class="request-form-own-checkbox-icon"
+                  width="10"
+                  height="8"
+                >
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&#8194
+              <a class="privacy-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-btn-send">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
